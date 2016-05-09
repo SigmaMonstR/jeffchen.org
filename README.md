@@ -1,3 +1,3 @@
 # JEFFCHEN.ORG
 
-New personal home page.
+New personal home page in development
