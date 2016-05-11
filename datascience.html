@@ -25,7 +25,13 @@
                   width: 100%;
                   margin: auto;
                   position: relative; 
-          }
+                }
+              
+              .carousel-caption {
+                    top: 10%;
+                    left: 10%;
+                    bottom: auto;
+                }
             </style>
     </head>
 
@@ -64,14 +70,7 @@
                        data-target=".navbar-collapse1" href="photo.html">
                     photojournalism
                 </a></li>
-                <li><a data-toggle="collapse" 
-                       data-target=".navbar-collapse1" href="news.html">
-                    news
-                </a></li>
-                <li><a data-toggle="collapse" 
-                       data-target=".navbar-collapse1" href="contact.html">
-                    contact
-                </a></li>
+              
              
             </ul>
         </div>
@@ -94,20 +93,56 @@
                 
                 <div class="col-lg-2 col-md-3 col-sm-12 " > 
                 <h3 class="codie"><span >data science</span></h3>
+               
                     <h5 class="slated hellie leftie" style="line-height:1.4;font-size:110%">
-                        The sort of stuff that fills up 70 hours of my week. <br><br></h5>
+                        The sort of stuff that fills up 70 hours of my week. <br></h5>
+                    
+                 <div>
+                        <a href="mailto:contact@jeffchen.org?Subject=Inquiry" target="_top">
+                         <i class="fa fa-envelope fa-2x" style="color:#265994;margin:5 5 5 5" aria-hidden="true">  </i>
+                        </a>
+                       <a href="https://www.linkedin.com/in/sigmamonster" target="_top">
+                         <i class="fa fa-linkedin fa-2x" style="color:#265994;margin:5 5 5 5" aria-hidden="true">  </i>
+                        </a>
+                        <a href="https://github.com/sigmamonstr" target="_top">
+                         <i class="fa fa-github fa-2x" style="color:#265994;margin:5 5 5 5" aria-hidden="true">  </i>
+                        </a>
+                        <a href="https://twitter.com/SigmaMonstR" target="_top">
+                         <i class="fa fa-twitter fa-2x" style="color:#265994;margin:5 5 5 5" aria-hidden="true">  </i>
+                        </a>
+                        
+                    </div>
                 </div>
                 
+                <!--VIIRS-->
                 <div class="col-lg-6 col-md-6 col-sm-12 " > 
-                    
-                    <img src="img/viirs.png" alt="viirs" width="100%" style="box-shadow: 2px 2px 2px 1px grey;"><br><br>
-                    <img src="img/sandy2.jpg" alt="sandy1" width="100%" style="box-shadow: 2px 2px 2px 1px grey;"><br><br>
-                     
+                    <a data-toggle="modal" data-target="#firecast" href="#firecast">
+                        <img src="img/firecast_raster_txt.png" alt="firecast" width="100%" style="box-shadow: 2px 2px 2px 1px grey;">
+                    </a>
+                    <br><br>
+                    <a data-toggle="modal" data-target="#sandy" href="#sandy">
+                        <img src="img/sandy2%20txt.jpg" alt="sandy1" width="100%" style="box-shadow: 2px 2px 2px 1px grey;">
+                    </a><br><br>
+                    <a data-toggle="modal" data-target="#freshkills" href="#freshkills">
+                        <img src="img/landfill_b4aftertext.jpg" alt="freskills" width="100%" style="box-shadow: 2px 2px 2px 1px grey;">
+                    </a><br><br> 
                 </div>
                 <div class="col-lg-4 col-md-3 col-sm-12 codie" > 
-                    <img src="img/firecast.png" alt="firecast" width="100%" style="box-shadow: 2px 2px 2px 1px grey;"><br><br><img src="img/landfill_b4after.jpg" alt="freskills" width="100%" style="box-shadow: 2px 2px 2px 1px grey;"><br><br>
-                    <img src="img/lawsuits.jpg" alt="lawsuits" width="100%" style="box-shadow: 2px 2px 2px 1px grey;"> <br><br>
-                    <img src="img/cdup.png" alt="cdup" width="100%" style="box-shadow: 2px 2px 2px 1px grey;">
+                    
+                    <a data-toggle="modal" data-target="#cdup" href="#cdup">
+                        <img src="img/cdup2.png" alt="cdup" width="100%" style="box-shadow: 2px 2px 2px 1px grey;">
+                    </a><br><br>
+                    <a data-toggle="modal" data-target="#viirs" href="#viirs">
+                        <img src="img/viirs2.png" alt="viirs" width="100%" style="box-shadow: 2px 2px 2px 1px grey;">
+                    </a>
+                    <br><br>
+                     
+                    
+                    <a data-toggle="modal" data-target="#lawsuits" href="#lawsuits">
+                        <img src="img/lawsuits%20text.jpg" alt="lawsuits" width="100%" style="box-shadow: 2px 2px 2px 1px grey;">
+                    </a> <br><br>
+                   
+                    
                 </div>
                 
              </div>
@@ -115,7 +150,187 @@
       
     </section>
     
-    
+    <!--MODALS-->
+    <div>
+         <!-- VIIRS -->
+          <div class="modal fade codie" id="viirs" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Satellite Imagery + Society</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <img src="img/viirs_35.png" width="100%">
+                         </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 hellie ">
+                            <p>Satellite imagery holds the potential to understand society in unprecedented ways. Everytime a Low Earth Orbiting satellite like NASA's Aqua/Terra or the Suomi NPP completes an orbit every 90 minutes, we collect more data that could be used to proxy human processes as well as directly measure the environment. In fact, the VIIRS instrument on NPP produces 2.5 TB of data everyday that can fuel applications from gas flare  monitoring to employment.</p>
+                            <p>In my work with satellite imagery, I've been working to understand how social and economic indicators can be proxied using nighttime satellite imagery as well as used to support various research. In the case of predicting county-level employment using nighttime imagery, we find that the radiance distribution may hold clues as to how to treat varying levels of light. The same amount of light in a 350m x 350m square pixel in New York City may mean something entirely different in Las Vegas. Thus, much of my work focuses on understanding how highly dimensional representations of satellite imagery can be used to improve short-term prediction on local scales. </p>
+
+                        </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- FireCast -->
+          <div class="modal fade codie" id="firecast" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">FireCast for Risk Mitigtion</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <img src="img/firecast.png" width="100%">
+                            
+                            <h4>Buzz</h4>
+                            <ul>
+                                <li><a href="https://www.innovations.harvard.edu/risk-based-inspection-system">Harvard's Ash Center Bright Ideas Award</a></li>
+                                <li><a href="http://blogs.wsj.com/digits/2014/01/24/how-new-yorks-fire-department-uses-data-mining/">WSJ Article</a></li>
+                                <li><a href="http://news.xinhuanet.com/world/2014-01/26/c_126065118.htm">Xin Hua (China) Article</a></li>
+                                <li><a href="http://www.telegraph.co.uk/technology/news/10599297/Computer-predictions-used-to-prevent-fires-in-New-York.html">The Telegraph (UK) </a></li>
+                                <li><a href="http://www.slate.fr/monde/82757/new-york-algorithme-risque-incendie-immeubles">Slate.fr </a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 hellie ">
+                          <p><strong>FireCast</strong> is a pioneering machine learning algorithm project developed in-house at FDNY. The approach screens 7,500 potential risk factors from across NYC government to find proxies that can help predict fires before they occur.</p>
+                           <p> Fires are seemingly random, but there are clues as to why they happen and when to anticipate them. When visiting the scene of a recent incident, there may be attributes that would seem to be obvious precursors of a fire, but why wait for a fire to happen? FireCast was designed for emergency preparedness, that is, providing the field intelligence to fire companies to conduct building inspections. At the heart of it, FireCast is built on a basic spec: </p>
+                            <p> <strong>Prob(Fire) = func(human activity, building characteristics, violation activity)</strong></p>
+
+                            <p>The rest of the algorithm is focused on geography-specific variable selection (e.g. battalions) combined with experimental design to prevent overfitting. As new risk trends emerge, FireCast is designed to capture them and reprioritize buildings for inspection. In short, billions of data elements captured in thousands of variables were tested in thousands of machine learning models tailored to each of FDNY's 49 battalions, allowing FDNY to pinpoint buildings of the highest risk of fire and ensure a safer New York through algorithmic awesomeness.</p>
+                        </div>
+                       
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+      <!-- Lawsuits -->
+          <div class="modal fade codie" id="lawsuits" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title codie">Lawsuit Outcome Prediction</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <img src="img/lawsuits.jpg" width="100%">
+                           </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 hellie ">
+                            <p>Agnostic of the evidence presented in a case, there are systematic quirks that are present regardless of the type of tort cases. Case characteristics such as time from the date of an incident and the date of filing the case, gender of the plaintiff, defendent type (e.g. corporation, person), individual lawyer caseload, type of incident, among other factors can help predict if a case will result in a payout. Using an ensemble of statistical classification methods, it's possible provide a reasonable sense of how a case will play out ahead of any hearing with predictive accuracies as high as 89%. <br><br>The devil is really in the details.</p>
+                        </div>
+                       
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Freshkills -->
+          <div class="modal fade" id="freshkills" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title codie">Freshkills Landfill</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <img src="img/landfill_b4after.jpg" width="100%">
+                         </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 hellie ">
+                          <p>For nearly 50 years, Freshkills Landfill loomed over the western Staten Island landscape (NYC), eventually claiming the title of the world's largest landfill. Everyday, the landfill accepted enough municipal solid waste (MSW) to fill the field at Yankee Stadium two times over. By March 2001, the City of New York shut down the operation.</p>
+
+                            <p>Freshkills was a local environmental externality due to its sensory impacts (e.g. sight and smell). The decomissioning of the site posed an opportunity to assess the extent of the site's externality influence and stigma. To understand directional stigma (e.g. lingering effects of externality), I developed a geographically weighted feature selection model to generalize hedonic pricing pre-post design framework at a micro-scale. If a dataset contained n = 32,000, this geographically weighted algorithm could be used to estimate a parameter surface over time for each hedonic variable, thereby allowing for some estimation of the presence of stigma. It's possible to use housing sales as a way to (1) calculate the distance and shape of the impact zone, and (2) determine changes to the price gradient -- that is houses closer to the site will likely have lower prices due to their proximity. Within three years, after the end of operations, about 20% of housing prices within a 2-mile radius of the landfill are no longer affected (see diagram above) and the price gradient has significantly 'flattened'. </p>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- CDUP -->
+          <div class="modal fade" id="cdup" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title codie">Data Education</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <img src="img/cdup.png" width="100%">
+                              <h4>Buzz</h4>
+                            <ul>
+                                <li><a href="https://www.whitehouse.gov/blog/2016/01/29/moving-open-data-open-knowledge-announcing-commerce-data-usability-project">White House</a></li>
+                                <li><a href="https://sunlightfoundation.com/blog/tag/commerce-data-usability-project/">Sunlight Foundation</a></li>
+                                <li><a href="http://federalnewsradio.com/federal-drive/2016/04/jeff-chen-commerce-strives-to-improve-data-usability/">Federal News Radio</a></li>
+                            </ul> 
+                           </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 hellie ">
+                            <p>The federal government has delivered hundreds of thousands of open  datasets to the public. It's free and open. But, making data open is not enough. Data is not very useful without context, examples, narrative, code, questions. To close the gap, I've been the co-lead on a data education initiative called the <a href="https://commerce.gov/datausability">Commerce Data Usability Project (CDUP) </a> focused on closing the knowledge gap by furnishing the public with the basic knowledge behind the data. By working private industry, nonprofits and academia, long form tutorials are now being contributed by data scientists of all skill levels to build up a core knowledge base that makes data fundamentally useful and usable.</p>
+                            <p></p>CDUP is aimed at the undergraduates, graduates, and research communities in order to bring value to those who need to learn and get started with research more efficiently.  An economist who is interested in studying satellite data should be furnished with the know-how of how to ingest such data and use it. A non-profit strategy advisor should be able to use the US Census Bureau's  American Community Survey to make more informed decisions for targeting services.  </p>
+                        </div>
+                       
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- Sandy -->
+          <div class="modal fade" id="sandy" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title codie">Disaster Response</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <img src="img/sandylarge.jpg" width="100%">
+                         </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 hellie ">
+                          <p>Hurricane Sandy left a destruction and hazards across New York City. While rapid scouting inspections conducted by building inspectors revealed the reach of the flood waters, little was known about the extent of damage and power systems. <br><br>Working with an interagency team, I co-led the design and implementation of rapid damage assessment and power restoration inspections in Staten Island. With an inspection force of over 100 personnel, in-depth physical inspections were undertaken at thousands of homes over a 96 hour blitz, informing citywide decision making. <br><br>Supporting the longer term recovery, I also wrote geocoding algorithms for Sandy impacted zone as well as developed classification algorithms for flagging uninspected homes with potential health risks (e.g. no heat, mold).</p>
+                </div>
+                    
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
     
     
     </html>
